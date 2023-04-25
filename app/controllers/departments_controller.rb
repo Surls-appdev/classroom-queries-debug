@@ -4,7 +4,7 @@ class DepartmentsController < ApplicationController
 
     @list_of_departments = matching_departments.order({ :created_at => :desc })
 
-    render({ :template => "departments/index.html.erb" })
+    render({ :template => "/departments/index.html.erb" })
   end
 
   def show
